@@ -8,12 +8,7 @@ pipeline {
         sh 'node --version'
       }
     }
-   
-  }
-  stage('Unit Test maven'){
-         
-         
-
+   stage('Unit Test maven'){
             steps{
                script{
                    
@@ -21,5 +16,5 @@ pipeline {
                }
             }
         }
-   
+  }   
 }
