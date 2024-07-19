@@ -8,5 +8,9 @@ pipeline {
         sh 'node --version'
       }
     }
+    stage('Download') {
+      steps {
+        apt install maven -y
+        sh 'mvn --version'
   }
 }
