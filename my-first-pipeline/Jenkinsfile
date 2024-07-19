@@ -12,5 +12,7 @@ pipeline {
       steps {
         apt install maven -y
         sh 'mvn --version'
+      }
+    }
   }
 }
