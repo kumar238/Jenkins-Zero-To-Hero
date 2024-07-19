@@ -10,8 +10,11 @@ pipeline {
     }
     stage('Download') {
       steps {
-        apt install maven -y
-        sh 'mvn --version'
+        sh '''
+                    
+                    apt install maven -y
+                    echo 'mvn --version'
+        '''
       }
     }
   }
