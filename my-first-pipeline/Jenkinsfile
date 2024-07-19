@@ -10,15 +10,5 @@ pipeline {
     }
    
   }
-   stages {
-   stage('Download') {
-      steps {
-        sh '''
-                    
-                    apt install git
-                    echo 'git --version'
-        '''
-      }
-    }
-   }
+   
 }
