@@ -14,11 +14,13 @@ pipeline {
         docker { image 'node:16-alpine' }
       }
       steps {
-        sh 'class HelloWorld {
-    public static void main(String[] args) {
+        sh '''
+         class HelloWorld {
+        public static void main(String[] args) {
         System.out.println("Hello, World!"); 
     }
-}'
+}
+'''
       }
     }
   }
