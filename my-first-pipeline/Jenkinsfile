@@ -1,11 +1,11 @@
 pipeline {
   agent {
-    any { image 'node:17-alpine' }
+    docker { image 'node:alpine:3.20' }
   }
   stages {
     stage('Test') {
       steps {
-        sh 'docker -v'
+        sh 'node -v'
       }
     }
 
