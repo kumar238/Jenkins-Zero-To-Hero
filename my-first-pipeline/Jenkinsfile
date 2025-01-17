@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'git -v'
+                sh 'git -v , docker -v'
             }
         }
     }
